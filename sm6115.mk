@@ -304,6 +304,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.motorola_bengal
 
+# LineageActions
+PRODUCT_PACKAGES += \
+    LineageActions
+
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service.motorola_bengal
