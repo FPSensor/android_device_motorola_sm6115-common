@@ -66,6 +66,12 @@ on late-fs
     exec_start wait_for_keymaster
     mount_all /vendor/etc/fstab.qcom --late
 
+    # Start services for bootanim
+    start surfaceflinger
+    start bootanim
+    start vendor.qti.hardware.display.composer
+    start vendor.qti.hardware.display.allocator
+
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
     mkdir /data/vendor/tloc 0700 system drmrpc
